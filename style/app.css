@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
   --half_gutter: 30px;
 }
@@ -16,8 +18,12 @@ ul, li, menu{
   list-style: none;
 }
 
+/* Layout */
+
 body{
   background-color: #1C2D3C;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -29,6 +35,13 @@ body{
   width: calc(100% / 12 * 4);
 }
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* HEADER */
+
 header{
   padding: 17px 110px;
   background-color: #06131F;
@@ -36,4 +49,40 @@ header{
 
 header .spotify-logo svg{
   height: 40px;
+}
+
+/* MAIN */
+
+.card{
+  padding: var(--half_gutter);
+}
+
+.card-album{
+  background-color: #112030;
+  height: 330px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+}
+
+.card-album img{
+  width: 185px;
+  aspect-ratio: 1/1;
+}
+
+.card-album .album-name{
+  font-size: 15px;
+  margin-top: 11px;
+}
+
+.card-album .album-artist{
+  font-size: 10px;
+  margin-top: 16px;
+}
+
+.card-album .album-year{
+  font-size: 13px;
+  margin-top: 16px;
 }

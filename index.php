@@ -23,6 +23,33 @@
     </header>
 
     <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 card">
+            <div class="card-album">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
+              <h3 class="album-name">New Jersey</h3>
+              <p class="album-artist">Bon Jovi</p>
+              <h4 class="album-year">1988</h4>
+            </div>
+          </div>
+          <div class="col-4 card">
+            <div class="card-album"></div>
+          </div>
+          <div class="col-4 card">
+            <div class="card-album"></div>
+          </div>
+          <div class="col-4 card">
+            <div class="card-album"></div>
+          </div>
+          <div class="col-4 card">
+            <div class="card-album"></div>
+          </div>
+          <div class="col-4 card">
+            <div class="card-album"></div>
+          </div>
+        </div>
+      </div>
 
     </main>
 
