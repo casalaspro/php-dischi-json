@@ -30,6 +30,7 @@
               <h3 class="album-name">{{ disc.title }}</h3>
               <p class="album-artist">{{ disc.author }}</p>
               <h4 class="album-year">{{ disc.year }}</h4>
+              
             </div>
           </div>
           
@@ -37,6 +38,14 @@
       </div>
 
     </main>
+
+    <div class="modal">
+      <div class="modal-card">
+        <h3 class="album-name">disc.title</h3>
+        <p class="album-artist">disc.author</p>
+        <h4 class="album-year">disc.year</h4>
+      </div>
+    </div>
 
 
   </div>
