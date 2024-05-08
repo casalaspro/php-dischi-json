@@ -5,7 +5,7 @@ createApp({
     return{
       message: 'Ciao Dischi!',
       discs: [],
-      isSelectedAlbum: true,
+      isSelectedAlbum: false,
       selectedAlbum: 0,
 
     }
