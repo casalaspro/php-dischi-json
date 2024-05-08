@@ -24,14 +24,24 @@
       <div class="container">
         <div class="row">
 
-          <div v-for=" disc in discs " class="col-4 card">
-            <div class="card-album">
+          <div v-for=" (disc, index) in discs " class="col-4 card">
+            <div class="card-album" @click="selectModal(index)">
               <img :src="disc.poster" alt="">
               <h3 class="album-name">{{ disc.title }}</h3>
               <p class="album-artist">{{ disc.author }}</p>
               <h4 class="album-year">{{ disc.year }}</h4>
-              
             </div>
+
+            <div class="modal" :class="(isSelectedAlbum && selectedAlbum == index) ? 'active' : deactivated">
+              <div  class="modal-card card-album">
+                <img :src="disc.poster" alt="">
+                <h3 class="album-name">{{disc.title}}</h3>
+                <p class="album-artist">{{disc.author}}</p>
+                <h4 class="album-year">{{disc.year}}</h4>
+              </div>
+              <button @click="closeModal()" class="modal-close">X</button>
+            </div>
+
           </div>
           
         </div>
@@ -39,7 +49,7 @@
 
     </main>
 
-    <div class="modal">
+    <!-- <div class="modal">
       <div class="modal-card card-album">
         <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
         <h3 class="album-name">disc.title</h3>
@@ -47,7 +57,7 @@
         <h4 class="album-year">disc.year</h4>
       </div>
       <button class="modal-close">X</button>
-    </div>
+    </div> -->
 
 
   </div>

@@ -5,6 +5,9 @@ createApp({
     return{
       message: 'Ciao Dischi!',
       discs: [],
+      isSelectedAlbum: true,
+      selectedAlbum: 0,
+
     }
   },
   created(){
@@ -17,6 +20,15 @@ createApp({
         this.discs = res.data.results;
         console.log(this.discs);
       })
+    },
+    closeModal(){
+      this.isSelectedAlbum = false;
+      selectedAlbum = 0;
+    },
+    selectModal(index){
+      this.selectedAlbum = index;
+      this.isSelectedAlbum = true;
     }
+
   }
 }).mount('#App')
