@@ -8,13 +8,10 @@
   <title>Dischi Php Json</title>
 </head>
 <body>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<script>
 
-</script>
-
-  <div id="app">
+  <div id="App">
     <header>
       <div class="spotify-logo">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -36,7 +33,7 @@
             </div>
           </div>
           <div class="col-4 card">
-            <div class="card-album"></div>
+            <div class="card-album"> {{ message }} </div>
           </div>
           <div class="col-4 card">
             <div class="card-album"></div>
@@ -63,6 +60,6 @@
 
 
 
-  
+  <script src="./js/app.js"></script>
 </body>
 </html>
