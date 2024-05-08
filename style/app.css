@@ -1,0 +1,39 @@
+:root{
+  --half_gutter: 30px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, li, menu{
+  list-style: none;
+}
+
+body{
+  background-color: #1C2D3C;
+}
+
+.container{
+  max-width: 1097px;
+  margin: 30px auto;
+}
+
+.col-4{
+  width: calc(100% / 12 * 4);
+}
+
+header{
+  padding: 17px 110px;
+  background-color: #06131F;
+}
+
+header .spotify-logo svg{
+  height: 40px;
+}
