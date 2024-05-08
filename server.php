@@ -44,3 +44,15 @@ $albums = [
       "genre" => "Rock",
   ]
 ];
+
+// set header in the right type
+header('Content-type: application/json');
+
+// set the "shape" of the response
+$response = [
+  "results" => $albums,
+  "success" => true,
+];
+
+// create output converted in json string
+echo json_encode($response);
