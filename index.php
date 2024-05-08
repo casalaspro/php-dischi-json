@@ -40,11 +40,13 @@
     </main>
 
     <div class="modal">
-      <div class="modal-card">
+      <div class="modal-card card-album">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg" alt="">
         <h3 class="album-name">disc.title</h3>
         <p class="album-artist">disc.author</p>
         <h4 class="album-year">disc.year</h4>
       </div>
+      <button class="modal-close">X</button>
     </div>
 
 

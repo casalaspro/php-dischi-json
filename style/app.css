@@ -26,6 +26,7 @@ body{
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
+  height: 100vh;
 }
 
 .container{
@@ -61,14 +62,18 @@ header .spotify-logo svg{
   padding: var(--half_gutter);
 }
 
-.card-album{
-  background-color: #112030;
+.card .card-album{
   height: 330px;
+  background-color: #112030;
   border-radius: 5px;
+  padding: 18px;
+}
+
+.card-album{
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 18px;
   position: relative;
 }
 
@@ -102,4 +107,30 @@ header .spotify-logo svg{
   top: 0;
   z-index: 2;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .card-album img{
+  width: 355px;
+  aspect-ratio: 1/1;
+}
+.modal .modal-close{
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  border: 1px #d3d3d3 solid;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.modal .modal-close:hover{
+  border: none;
+  background-color: #d3d3d3;
+  color: black;
 }
