@@ -75,7 +75,7 @@ header .spotify-logo svg{
   padding: 18px;
 }
 
-.card .card-album:hover{
+.card > .card-album:hover{
   border: 1px solid #20D760;
 }
 
